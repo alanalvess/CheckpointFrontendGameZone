@@ -4,6 +4,8 @@ import { Container, Row, Col} from 'react-bootstrap';
 import CardProduct from '../../components/CardProduct';
 import axios from 'axios';
 
+import './style.scss';
+
 const Jogos = () => {
   const [consoles, setConsoles] = useState([]);
 
@@ -20,10 +22,10 @@ const Jogos = () => {
   return (
     <>
       <Helmet>
-        <title>GameZone | Jogos</title>
+        <title>GameZone | Consoles</title>
       </Helmet>
-      <section id="banner-page-jogos" className="d-flex align-items-center justify-content-center">
-        <h2 className="fs-1 text-center">Aqui você encontra os melhores jogos</h2>
+      <section className="page-console-banner d-flex align-items-center justify-content-center">
+        <h2 className="fs-1 text-center branco">Aqui você encontra os melhores consoles</h2>
       </section>
       <Container>
         <Row>

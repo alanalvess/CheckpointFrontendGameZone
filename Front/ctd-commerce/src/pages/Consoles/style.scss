@@ -1,25 +1,11 @@
-// .select-container {
-//   margin-left: 355px;
-//   margin-top: 30px;
-// }
+.page-console-banner {
+  background-image: url('../../img/banner-console.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 350px;
+}
 
-
-// .filtro {
-//   width: 200px;
-//   text-align: center;
-//   border: 2px solid #cccccc !important;
-//   border-radius: 4px;
-//   color: #333333;
-// }
-
-// #banner-page-jogos {
-//   background-image: url('../../img/banner-page-jogos.jpg');
-//   background-size: cover;
-//   background-position: center center;
-//   background-color: darkslateblue;
-//   height: 350px;
-// }
-
-// #banner-page-jogos h2 {
-//   color: #ffffff !important;
-// }
+.branco {
+  color: #ffffff !important; 
+  text-shadow: 1px 1px 5px #444444;
+}

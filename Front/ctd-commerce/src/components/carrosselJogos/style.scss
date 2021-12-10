@@ -66,14 +66,20 @@ h2 {
           // font-size: 1rem;
         }
 
-        button {
+        .button-buy-product {
           width: 100%;
           background-color: var(--purple);
           color: var(--white);
           transition: background-color 0.5s;
+          
+          .btn-primary{
+
+            border-color: var(--purple);
+          }
 
           &:hover {
             background-color: var(--purple-dark);
+            color: #eeeeee;
           }
         }
       }

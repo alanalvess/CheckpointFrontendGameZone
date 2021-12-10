@@ -2,7 +2,7 @@
 import { Helmet } from "react-helmet";
 
 import Poster from "./Poster";
-import Jogos from "../../components/Jogos";
+import Jogos from "../../components/carrosselJogos";
 import Consoles from "../../components/Consoles";
 import { useEffect, useState } from "react";
 import axios from "axios";

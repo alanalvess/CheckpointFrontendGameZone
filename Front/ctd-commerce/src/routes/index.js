@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Home from "../pages/Home";
 import Jogos from "../pages/Jogos";
 import JogoDetalhe from "../pages/JogoDetalhe";
@@ -15,9 +14,8 @@ import Footer from "../components/Footer";
 
 const RouteList = () => (
   <BrowserRouter>
-    <nav>
-      <Header />
-    </nav>
+
+    <Header />
 
     <Routes>
       <Route path="/" element={<Home />} />
@@ -29,9 +27,8 @@ const RouteList = () => (
       <Route path="*" element={<NotFound />} />
     </Routes>
 
-    <div>
-      <Footer />
-    </div>
+    <Footer />
+
   </BrowserRouter>
 );
 

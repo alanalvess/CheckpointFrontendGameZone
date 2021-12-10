@@ -50,16 +50,14 @@ const developersTeam = [
 const Team = () => {
   return (
     <div id="contact">
-      <p>
-        Time Full Stack com experiência em React, Java, Maven, Sping Boot e AWS.
-        Conheça mais sobre nós e veja outros projetos conectando-se pelo
-        LinkedIn e visitando nossos perfis no GitHub.
-      </p>
+      <h2>
+        Equipe Gamezone. Since 2021.
+      </h2>
       <ul>
         {developersTeam.map((developer) => {
           return (
             <li>
-              <div className="card" style={{ width: "12rem" }}>
+              <div className="card" >
                 <img
                   src={developer.picture}
                   className="card-img-top"
@@ -70,14 +68,14 @@ const Team = () => {
                   <li>
                     <a href={developer.linkedinLink}>
                       <svg
-                        height="40"
-                        width="40"
+                        height="20"
+                        width="20"
                         fill="#ffffff"
                         style={
                           ({ fillRule: "evenodd" },
-                          { clipRule: "evenodd" },
-                          { strokeLinejoin: "round" },
-                          { strokeMiterlimit: 2 })
+                            { clipRule: "evenodd" },
+                            { strokeLinejoin: "round" },
+                            { strokeMiterlimit: 2 })
                         }
                         version="1.1"
                         viewBox="0 0 512 512"
@@ -94,8 +92,8 @@ const Team = () => {
                     <a href={developer.githubLink}>
                       <svg
                         enable-background="new -1163 1657.697 56.693 56.693"
-                        height="45"
-                        width="45"
+                        height="23"
+                        width="23"
                         fill="#ffffff"
                         id="Layer_1"
                         version="1.1"
@@ -127,7 +125,7 @@ const Team = () => {
           );
         })}
       </ul>
-    </div>
+    </div >
   );
 };
 

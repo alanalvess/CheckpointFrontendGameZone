@@ -1,14 +1,12 @@
 import { Helmet } from 'react-helmet';
-import style from './style.scss'
-
-import Footer from '../../components/Footer'
+import './style.scss'
 
 const Jogos = () => {
 
   return (
     <>
       <Helmet>
-        <title>GameZone | Jogos</title>
+        <title>GameZone | Sobre</title>
       </Helmet>
       <div className="sobre">
         <h2>Sobre Nós</h2>
@@ -18,7 +16,7 @@ const Jogos = () => {
         </p>
         <h3>Estrutura Utilizada:</h3>
         <ul>
-          <li>Back-End
+          <li className="lista">Back-End
             <ul>
               <li>Linguagem de Programação Java</li>
               <li>Framework Spring</li>
@@ -27,7 +25,7 @@ const Jogos = () => {
               <li>Implementação de API para uso do Front-End</li>
             </ul>
           </li>
-          <li>Front-End
+          <li className="lista">Front-End
             <ul>
               <li>Linguagem de Marcação HTML5</li>
               <li>Linguagem de Estilização SASS</li>
@@ -36,7 +34,7 @@ const Jogos = () => {
               <li>Utilizar API desenvolvida pelo Back-End</li>
             </ul>
           </li>
-          <li>Infraestrutura
+          <li className="lista">Infraestrutura
             <ul>
               <li>Implementar e disponibilizar a API na AWS EC2</li>
               <li>Hospedar o Front-End  no ambiente Vercel.</li>

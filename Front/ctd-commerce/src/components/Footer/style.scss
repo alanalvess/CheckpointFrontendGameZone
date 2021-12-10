@@ -1,12 +1,9 @@
 #contact {
   background-color: #000000;
   color: #ffffff;
-  p {
-    text-align: center;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
-    margin-block-end: 2rem;
-    width: 85%;
+  padding: 20px;
+  h2{
+    margin-bottom: 30px;
   }
   ul {
     list-style: none;
@@ -22,11 +19,16 @@
         align-items: center;
         background-color: #000000;
         border: none;
+        width: 125px;
         img {
-          width: 50%;
+          width: 60%;
           filter: grayscale(100%);
           -webkit-filter: grayscale(100%);
           clip-path: circle(50%);
+        }
+
+        h3{
+          font-size: 18px;
         }
         ul {
           padding: 0;
@@ -35,7 +37,7 @@
           justify-content: center;
           align-items: center;
           li {
-            margin: 5px;
+            margin: 0 5px;
             a {
               :hover {
                 fill: #452366;

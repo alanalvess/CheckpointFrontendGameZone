@@ -1,13 +1,19 @@
 .sobre {
     background-color:#eeeeee;
-    margin: 0 10vw;
+    margin: 5vw;
+    padding: 2vh 2vw;
 
     h3{
         margin: 10px 0;
         text-align: center;
     }
 
-    li{
+    .lista {
         margin-left: 5vw;
+    }
+
+    p {
+        margin: 0 5vh;
+        width: 90%;
     }
 }
