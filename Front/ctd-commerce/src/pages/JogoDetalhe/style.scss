@@ -1,20 +1,12 @@
-.jogo-detalhe-wrapper {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 100px;
+.red {
+  background-color: red !important;
 }
 
-.card-wrapper {
-  
+.largura-card {
+  max-width: 1100px !important;
+  width: 100% !important;
 }
 
-.card {
-  width: 200px;
-  margin: auto;
-}
-
-p {
-  margin: auto;
-  width: 400px;
-  margin-top: 10px;
+.centralizar {
+  margin: 0 auto !important;
 }

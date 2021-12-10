@@ -1,65 +1,40 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Row, Col } from "react-bootstrap";
+
+import CardProduct from '../../CardProduct';
 
 const Xbox = ({ jogos }) => {
   return (
     <>
       <h2>Jogos | Xbox</h2>
-      <Carousel fade variant="dark">
+      <Carousel variant="dark" className="max-width centralizar" indicators={false} interval={2000000}>
         <Carousel.Item>
-          <section class="container section-product">
-            <article class="container-product">
-              {jogos.slice(0,3).map((jogo) => (
-                <div key={jogo.id} class="card">
-                  <img src={jogo.image} alt="" />
-                  <div class="box-info-product">
-                    <strong>{jogo.title}</strong>
-                    <span>R$ {jogo.price}</span>
-                    <a class="button-buy-product" href="">
-                      <button>Comprar</button>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </article>
-          </section>
+          <Row className="d-flex justify-content-center max-width centralizar">
+            {jogos.slice(0,3).map((jogo) => (
+              <Col className="coluna" md={3} sm={6}>
+                <CardProduct data={jogo}/>
+              </Col>
+            ))}
+          </Row>
         </Carousel.Item>
         <Carousel.Item>
-          <section class="container section-product">
-            <article class="container-product">
-              {jogos.slice(3,6).map((jogo) => (
-                <div key={jogo.id} class="card">
-                  <img src={jogo.image} alt="" />
-                  <div class="box-info-product">
-                    <strong>{jogo.title}</strong>
-                    <span>R$ {jogo.price}</span>
-                    <a class="button-buy-product" href="">
-                      <button>Comprar</button>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </article>
-          </section>
+          <Row className="d-flex justify-content-center max-width centralizar">
+            {jogos.slice(3,6).map((jogo) => (
+              <Col className="coluna" md={3} sm={6}>
+                <CardProduct data={jogo}/>
+              </Col>
+            ))}
+          </Row>
         </Carousel.Item>
         <Carousel.Item>
-          <section class="container section-product">
-            <article class="container-product">
-              {jogos.slice(6).map((jogo) => (
-                <div key={jogo.id} class="card">
-                  <img src={jogo.image} alt="" />
-                  <div class="box-info-product">
-                    <strong>{jogo.title}</strong>
-                    <span>R$ {jogo.price}</span>
-                    <a class="button-buy-product" href="">
-                      <button>Comprar</button>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </article>
-          </section>
+          <Row className="d-flex justify-content-center max-width centralizar">
+            {jogos.slice(6).map((jogo) => (
+              <Col className="coluna" md={3} sm={6}>
+                <CardProduct data={jogo}/>
+              </Col>
+            ))}
+          </Row>
         </Carousel.Item>
       </Carousel>
     </>

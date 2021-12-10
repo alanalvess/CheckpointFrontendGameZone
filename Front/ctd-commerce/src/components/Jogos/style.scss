@@ -8,6 +8,29 @@ h2 {
   text-align: center;
 }
 
+.max-width {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.centralizar {
+  margin: 0 auto !important;
+}
+
+.purple {
+  background-color: purple !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.coluna {
+  height: 400px !important;
+  max-width: 280px !important;
+  width: 100% !important;
+}
+
 .section-product {
   margin-bottom: 50px;
   display: flex;

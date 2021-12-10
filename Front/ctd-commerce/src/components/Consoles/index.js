@@ -1,48 +1,31 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./style.scss";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Row, Col } from "react-bootstrap";
+import CardProduct from '../../components/CardProduct';
 
 const Consoles = ({ consoles }) => {
   return (
     <>
       <h2>Consoles</h2>
-      <Carousel fade variant="dark">
+      <Carousel variant="dark" className="max-width centralizar" indicators={false} interval={2000000}>
         <Carousel.Item>
-          <section class="container section-product">
-            <article class="container-product">
-              {consoles.slice(0, 2).map((console) => (
-                <div class="card">
-                  <img src={console.image} alt="" />
-                  <div class="box-info-product">
-                    <strong>{console.title}</strong>
-                    <span>R$ {console.price}</span>
-                    <a class="button-buy-product" href="">
-                      <button>Comprar</button>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </article>
-          </section>
+          <Row className="d-flex justify-content-center max-width centralizar">
+            {consoles.slice(0, 2).map((console) => (
+              <Col className="coluna" md={3} sm={6}>
+                <CardProduct data={console}/>
+              </Col>
+            ))}
+          </Row>
         </Carousel.Item>
         <Carousel.Item>
-          <section class="container section-product">
-            <article class="container-product">
-              {consoles.slice(2).map((console) => (
-                <div class="card">
-                  <img src={console.image} alt="" />
-                  <div class="box-info-product">
-                    <strong>{console.title}</strong>
-                    <span>R$ {console.price}</span>
-                    <a class="button-buy-product" href="">
-                      <button>Comprar</button>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </article>
-          </section>
+          <Row className="d-flex justify-content-center max-width centralizar">
+            {consoles.slice(2).map((console) => (
+              <Col className="coluna" md={3} sm={6}>
+                <CardProduct data={console}/>
+              </Col>
+            ))}
+          </Row>
         </Carousel.Item>
       </Carousel>
     </>

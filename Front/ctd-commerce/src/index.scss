@@ -1,12 +1,14 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap'); */
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Bebas Neue', cursive;
+  // font-family: 'Bebas Neue', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -34,4 +36,18 @@ button {
   width: 100%;
 
   margin: 0 auto;
+}
+
+.orange {
+  background-color: orange !important;
+}
+
+.red {
+  background-color: red;
+}
+
+.dimensoes {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-color: #eeeeee;
 }

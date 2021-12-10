@@ -1,13 +1,21 @@
-.game-card {
-  border: 1px solid #000;
-  width: 200px;
-  height: 300px;
-  margin: 10px;
+.largura {
+  max-width: 800px !important;
+  width: 100% !important;
 }
 
-.card-wrapper {
-  
+.titulo-sacola {
+  font-weight: 700;
 }
 
-.card {
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.largura-minima {
+  min-width: 100px;
+  max-width: 140px !important;
+}
+
+.cor-card {
+  background-color: #ffffff;
 }

@@ -32,6 +32,7 @@ const Jogos = () => {
       })
       .catch((err) => console.log(err));
   }, []);
+  
   return (
     <>
       <Playstation jogos={psGames} />

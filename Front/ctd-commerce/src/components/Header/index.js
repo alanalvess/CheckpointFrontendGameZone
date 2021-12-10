@@ -1,60 +1,33 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import "./style.scss";
-import cart from "../../img/cart.svg";
-import user from "../../img/user.svg";
-import logo from "../../img/gameszone.svg";
-import { Link } from "react-router-dom";
+import {Container, Navbar, Nav} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import logo from '../../img/gameszone.svg';
+import { BsBagFill } from 'react-icons/bs';
+import './style.scss';
 
-const Header = () => {
+export default function Header() {
   return (
-    <>
-      <div>
-        <header id="main-header">
-          <nav className="container content-header">
-            <a id="box-logo" href="./index.html">
-              <img id="logo" src={logo} alt="" />
-            </a>
-            <div id="container-menu-login">
-              <div id="box-menu">
-                <Link class="item-menu" to="/">
-                  Home
-                </Link>
-                <div class="dropdown">
-                  <a class="dropbtn item-menu" href="/jogos">
-                    Jogos
-                  </a>
-                  <div class="dropdown-content">
-                    <a href="/ps-5">PS5</a>
-                    <a href="/ps-4">PS4</a>
-                    <a href="xbox-series-x">Xbox Series X</a>
-                    <a href="xbox-one">Xbox One</a>
-                  </div>
-                </div>
-                <a class="item-menu" href="/consoles">
-                  Consoles
-                </a>
-                <a class="item-menu" href="/sobre">
-                  Sobre
-                </a>
-              </div>
-
-              <div id="box-login-cart">
-                <Link to="/carrinho">
-                  <img src={cart} alt="carrinho de compras" />
-                </Link>
-                <a href="/conta">
-                  <img src={user} alt="login do usuario" />
-                </a>
-              </div>
-            </div>
-
-            <span id="menu-toggle"></span>
-          </nav>
-        </header>
-      </div>
-    </>
+    // <Navbar expand="md" className="border-bottom border-1 border-dark">
+    <Navbar expand="md">
+      <Container>
+        <Link to="/">
+          <img className="logo" src={logo} alt="" />
+        </Link>
+      
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className="">
+          <Nav>
+            <Link to="/" className="nav-item">Home</Link>
+            <Link to="/consoles" className="nav-item">Console</Link>
+            <Link to="/jogos" className="nav-item">Jogos</Link>
+            <Link  to="/carrinho" className="nav-item">
+              <BsBagFill className="bag-in" size={22}/>
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+        <Link to="/carrinho" className="nav-item">
+          <BsBagFill className="bag-out" size={22}/>
+        </Link>
+      </Container>
+    </Navbar>
   );
-};
-
-export default Header;
+}
