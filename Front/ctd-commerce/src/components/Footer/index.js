@@ -27,7 +27,7 @@ const developersTeam = [
     id: 4,
     name: "Bruno Barbosa",
     githubLink: "https://github.com/ALTbruno",
-    linkedinLink: "",
+    linkedinLink: "https://www.linkedin.com/in/brunoribeirobarbosa",
     picture: "https://avatars.githubusercontent.com/u/84299852?v=4",
   },
   {
@@ -73,7 +73,7 @@ const Team = () => {
                 <h3 className="card-title">{developer.name}</h3>
                 <ul>
                   <li>
-                    <a href={developer.linkedinLink}>
+                    <a href={developer.linkedinLink} target="_blank">
                       <svg
                         height="20"
                         width="20"
@@ -96,7 +96,7 @@ const Team = () => {
                     </a>
                   </li>
                   <li>
-                    <a href={developer.githubLink}>
+                    <a href={developer.githubLink} target="_blank">
                       <svg
                         enable-background="new -1163 1657.697 56.693 56.693"
                         height="23"
