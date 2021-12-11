@@ -32,6 +32,13 @@ const developersTeam = [
   },
   {
     id: 5,
+    name: "Rafael Rodrigues",
+    githubLink: "https://github.com/Rafa-Roodrigues",
+    linkedinLink: "",
+    picture: "https://avatars.githubusercontent.com/u/56421375?v=4",
+  },
+  {
+    id: 6,
     name: "Vivian Sanches",
     githubLink: "https://github.com/Viviansol",
     linkedinLink:
@@ -39,12 +46,12 @@ const developersTeam = [
     picture: "https://avatars.githubusercontent.com/u/84527029?v=4",
   },
   {
-    id: 6,
+    id: 7,
     name: "Willian Rodrigues",
     githubLink: "https://github.com/warwilliam",
     linkedinLink: "",
     picture: "https://avatars.githubusercontent.com/u/85083548?v=4",
-  },
+  }
 ];
 
 const Team = () => {

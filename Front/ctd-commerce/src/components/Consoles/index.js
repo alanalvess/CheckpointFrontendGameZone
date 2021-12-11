@@ -8,7 +8,7 @@ const Consoles = ({ consoles }) => {
   return (
     <>
       <h2>Consoles</h2>
-      <Carousel variant="dark" className="max-width centralizar" indicators={false} interval={2000000}>
+      <Carousel fade variant="dark" className="max-width centralizar" indicators={false} interval={2000000}>
         <Carousel.Item>
           <Row className="d-flex justify-content-center max-width centralizar">
             {consoles.slice(0, 2).map((console) => (

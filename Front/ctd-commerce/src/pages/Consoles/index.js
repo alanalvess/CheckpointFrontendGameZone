@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Container, Row, Col} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import CardProduct from '../../components/CardProduct';
 import axios from 'axios';
 
@@ -24,20 +24,23 @@ const Jogos = () => {
       <Helmet>
         <title>GameZone | Consoles</title>
       </Helmet>
-      <section className="page-console-banner d-flex align-items-center justify-content-center">
-        <h2 className="fs-1 text-center branco">Aqui você encontra os melhores consoles</h2>
-      </section>
-      <Container>
-        <Row>
-          {consoles.length !== 0 && (
-            consoles.map(console => (
-              <Col lg={3} md={4} sm={6} xs={12}>
-              <CardProduct data={console}/>
-            </Col>
-            ))
-          )}
-        </Row>
-      </Container>
+      <div className='banner'>
+
+        <section className="page-console-banner d-flex align-items-center justify-content-center">
+          <h2 className="fs-1 text-center branco">Aqui você encontra os melhores consoles</h2>
+        </section>
+      </div>
+        <Container>
+          <Row>
+            {consoles.length !== 0 && (
+              consoles.map(console => (
+                <Col lg={3} md={4} sm={6} xs={12}>
+                  <CardProduct data={console} />
+                </Col>
+              ))
+            )}
+          </Row>
+        </Container>
     </>
   );
 };

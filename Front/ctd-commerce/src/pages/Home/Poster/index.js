@@ -3,7 +3,7 @@ import './style.scss';
 
 export default function Carrossel() {
   return (
-    <Carousel>
+    <Carousel fade controls={false} indicators={false}>
       <Carousel.Item>
         <div className='d-block w-100 poster poster-1 imagem-carrossel'></div>
       </Carousel.Item>

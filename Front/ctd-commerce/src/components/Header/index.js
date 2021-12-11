@@ -1,4 +1,4 @@
-import {Container, Navbar, Nav} from 'react-bootstrap';
+import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../img/gameszone.svg';
 import { BsBagFill } from 'react-icons/bs';
@@ -12,20 +12,21 @@ export default function Header() {
         <Link to="/">
           <img className="logo" src={logo} alt="" />
         </Link>
-      
+
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="">
           <Nav>
             <Link to="/" className="nav-item">Home</Link>
             <Link to="/consoles" className="nav-item">Console</Link>
             <Link to="/jogos" className="nav-item">Jogos</Link>
-            <Link  to="/carrinho" className="nav-item">
-              <BsBagFill className="bag-in" size={22}/>
+            <Link to="/sobre-nos" className="nav-item">Sobre Nós</Link>
+            <Link to="/carrinho" className="nav-item">
+              <BsBagFill className="bag-in" size={22} />
             </Link>
           </Nav>
         </Navbar.Collapse>
         <Link to="/carrinho" className="nav-item">
-          <BsBagFill className="bag-out" size={22}/>
+          <BsBagFill className="bag-out" size={22} />
         </Link>
       </Container>
     </Navbar>

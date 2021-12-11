@@ -15,19 +15,25 @@ import Footer from "../components/Footer";
 const RouteList = () => (
   <BrowserRouter>
 
-    <Header />
+    <header>
+      <Header />
+    </header>
 
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/jogos" element={<Jogos />} />
-      <Route path="/:id" element={<JogoDetalhe />} />
-      <Route path="/consoles" element={<Consoles />} />
-      <Route path="/sobre" element={<Sobre />} />
-      <Route path="/carrinho" element={<Carrinho />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/jogos" element={<Jogos />} />
+        <Route path="/:id" element={<JogoDetalhe />} />
+        <Route path="/consoles" element={<Consoles />} />
+        <Route path="/sobre-nos" element={<Sobre />} />
+        <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </main>
 
-    <Footer />
+    <footer>
+      <Footer />
+    </footer>
 
   </BrowserRouter>
 );

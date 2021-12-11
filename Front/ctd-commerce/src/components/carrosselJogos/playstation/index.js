@@ -9,12 +9,13 @@ const Playstation = ({ jogos }) => {
   return (
     <>
       <h2>Jogos | Playstation</h2>
-      <Carousel variant="dark" className="max-width centralizar" indicators={false} interval={2000000}>
+
+      <Carousel fade variant="dark" className="max-width centralizar" indicators={false} interval={2000000}>
         <Carousel.Item>
           <Row className="d-flex justify-content-center max-width centralizar">
             {jogos.slice(0, 3).map((jogo) => (
               <Col className="coluna" md={3} sm={6}>
-                <CardProduct data={jogo}/>
+                <CardProduct data={jogo} />
               </Col>
             ))}
           </Row>
@@ -22,17 +23,17 @@ const Playstation = ({ jogos }) => {
         <Carousel.Item>
           <Row className="d-flex justify-content-center max-width centralizar">
             {jogos.slice(3, 6).map((jogo) => (
-                <Col className="coluna" md={3} sm={6}>
-                  <CardProduct data={jogo}/>
-                </Col>
-              ))}
+              <Col className="coluna" md={3} sm={6}>
+                <CardProduct data={jogo} />
+              </Col>
+            ))}
           </Row>
         </Carousel.Item>
         <Carousel.Item>
           <Row className="d-flex justify-content-center max-width centralizar">
             {jogos.slice(6, 9).map((jogo) => (
               <Col className="coluna" md={3} sm={6}>
-                <CardProduct data={jogo}/>
+                <CardProduct data={jogo} />
               </Col>
             ))}
           </Row>
