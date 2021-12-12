@@ -14,7 +14,7 @@ const Jogos = () => {
   const [jogos, setJogos] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
   useEffect(() => {
-    axios.get("http://gamezone-env.eba-nm6433md.us-east-1.elasticbeanstalk.com/products")
+    axios.get("https://gamezonestore.herokuapp.com/products")
       .then((res) => {
         const jogos = res.data.filter(
           (jogo) => jogo.category.name !== "Consoles"
