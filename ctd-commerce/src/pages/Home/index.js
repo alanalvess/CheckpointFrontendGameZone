@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     axios
       .get(
-        "http://gamezone-env.eba-nm6433md.us-east-1.elasticbeanstalk.com/products"
+        "https://gamezonestore.herokuapp.com/products"
       )
       .then((res) => {
         const consoles = res.data.filter(

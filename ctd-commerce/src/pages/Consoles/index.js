@@ -11,7 +11,7 @@ const Jogos = () => {
 
   useEffect(() => {
     async function request() {
-      const { data } = await axios.get("http://gamezone-env.eba-nm6433md.us-east-1.elasticbeanstalk.com/products");
+      const { data } = await axios.get("https://gamezonestore.herokuapp.com/products");
       const arrayConsoles = data.filter(produto => produto.category.name === "Consoles");
       setConsoles(arrayConsoles);
     }

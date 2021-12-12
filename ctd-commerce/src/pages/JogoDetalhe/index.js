@@ -12,7 +12,7 @@ const JogoDetalhe = () => {
   let {id} = useParams();
 
   useEffect(() => {
-    axios.get(`http://gamezone-env.eba-nm6433md.us-east-1.elasticbeanstalk.com/products/${id}`)
+    axios.get(`https://gamezonestore.herokuapp.com/products/${id}`)
       .then((res) => {
         setProducts(res.data);
       })
