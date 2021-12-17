@@ -3,8 +3,6 @@ import React from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
 import CardProduct from "../../CardProduct";
 
-import './style.scss';
-
 const Xbox = ({ jogos }) => {
   return (
     <>

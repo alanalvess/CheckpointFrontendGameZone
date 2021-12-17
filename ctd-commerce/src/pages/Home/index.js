@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import Poster from "./Poster";
 import Jogos from "../../components/carrosselJogos";
-import Consoles from "../../components/Consoles";
+// import Consoles from "../../components/Consoles";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -32,7 +32,6 @@ const Home = () => {
       </Helmet>
       <Poster />
       <Jogos />
-      <Consoles consoles={consoles} />
     </>
   );
 };

@@ -4,12 +4,14 @@ import "./style.scss";
 import Playstation from "./playstation";
 import Xbox from "./xbox";
 import Switch from "./switch";
+import Consoles from "./Consoles";
 import axios from "axios";
 
 const Jogos = () => {
   const [psGames, setPsGames] = useState([]);
   const [xboxGames, setXboxGames] = useState([]);
   const [switchGames, setSwitchGames] = useState([]);
+  const [consoles, setConsoles] = useState([]);
 
   useEffect(() => {
     axios
@@ -26,9 +28,13 @@ const Jogos = () => {
         const switchGames = res.data.filter(
           (jogo) => jogo.category.name === "Jogos de Switch"
         );
+        const consoles = res.data.filter(
+          (jogo) => jogo.category.name === "Consoles"
+        );
         setPsGames(psGames);
         setXboxGames(xboxGames);
         setSwitchGames(switchGames);
+        setConsoles(consoles);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -38,6 +44,8 @@ const Jogos = () => {
       <Playstation jogos={psGames} />
       <Xbox jogos={xboxGames} />
       <Switch jogos={switchGames} />
+      <Consoles jogos={consoles} />
+
     </>
   );
 };
