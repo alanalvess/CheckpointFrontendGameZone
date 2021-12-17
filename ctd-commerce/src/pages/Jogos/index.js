@@ -6,11 +6,11 @@ import CardProduct from "../../components/CardProduct";
 import "./style.scss";
 
 const Jogos = () => {
-  function handleNavigateToGameDetail(e, jogo) {
-    e.preventDefault();
-    localStorage.setItem("jogo", JSON.stringify(jogo));
-    window.location.href = "/jogo-detalhe";
-  }
+  // function handleNavigateToGameDetail(e, jogo) {
+  //   e.preventDefault();
+  //   localStorage.setItem("jogo", JSON.stringify(jogo));
+  //   window.location.href = "/jogo-detalhe";
+  // }
   const [jogos, setJogos] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
   useEffect(() => {

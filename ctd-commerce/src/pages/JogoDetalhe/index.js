@@ -36,6 +36,7 @@ const JogoDetalhe = () => {
             <p className="m-0">
               {product.description}
             </p>
+            
             <p className="fw-bold fs-3 mt-2">R$ {product.price}</p>
             <Button onClick={handlePutOnCart} className="purple border-0" size="lg"> Adicionar ao Carrinho </Button>
           </Col>
