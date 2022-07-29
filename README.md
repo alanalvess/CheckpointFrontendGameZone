@@ -1,5 +1,4 @@
 # Checkpoint-Integrador
 
-checkpoint-integrador-alanalvess.vercel.app
-checkpoint-integrador-git-main-alanalvess.vercel.app
-checkpoint-integrador.vercel.app
+[Clique aqui para vizualizar o projeto](https://checkpoint-integrador-alanalvess.vercel.app/)
+
